@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        background-color: #e0f2fe;
+        font-size: 90%;
+        /* Force blue on html */
+    }
+
+    body {
+        background-color: #e0f2fe;
+        /* Force blue on body */
+        min-height: 100vh;
+    }
+}
+
+/* Force font application bypassing Tailwind config delay */
+.font-signature {
+    font-family: "Brush Script MT", "Kaushan Script", cursive !important;
+}
