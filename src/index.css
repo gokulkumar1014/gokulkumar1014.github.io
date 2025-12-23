@@ -13,6 +13,7 @@
         background-color: #e0f2fe;
         /* Force blue on body */
         min-height: 100vh;
+        overflow-x: hidden;
     }
 }
 
