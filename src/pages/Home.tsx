@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
-            <section className="min-h-[80vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-12 pb-12 gap-8 md:gap-16">
+            <section className="min-h-[55vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-12 pb-12 gap-8 md:gap-16">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
