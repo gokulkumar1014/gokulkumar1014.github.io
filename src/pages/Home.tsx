@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
-            <section className="min-h-[80vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-32 pb-12 gap-8 md:gap-16">
+            <section className="min-h-[80vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-12 pb-12 gap-8 md:gap-16">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -109,12 +109,12 @@ const Home: React.FC = () => {
             </section>
 
             {/* "What I Do" Section */}
-            <Section className="bg-white/40 backdrop-blur-xl rounded-[3rem] my-10 mx-auto shadow-sm border border-white/50 p-10 md:p-16 relative overflow-hidden">
+            <Section className="bg-white/40 backdrop-blur-xl rounded-3xl md:rounded-[3rem] my-10 mx-auto shadow-sm border border-white/50 p-6 md:p-16 relative overflow-hidden">
 
                 {/* Decorative background Elements for Section */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
-                <div className="grid md:grid-cols-3 gap-12 relative z-10">
+                <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative z-10">
                     <div className="space-y-4 group">
                         <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-accent mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
                             <BarChart3 size={28} />
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
 
                         {/* Row 1 */}
                         <motion.div
-                            className="flex gap-6 mb-6 w-max"
+                            className="flex gap-4 md:gap-6 mb-6 w-max"
                             animate={{ x: ["0%", "-50%"] }}
                             transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
                         >
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
                                 <motion.div
                                     key={`${tech.name}-${idx}`}
                                     whileHover={{ scale: 1.05, y: -2 }}
-                                    className="flex items-center px-6 py-3 rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
+                                    className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
                                     style={{
                                         backgroundColor: `${tech.color}15`, // ~8% opacity
                                         borderColor: `${tech.color}30`,     // ~20% opacity
@@ -166,18 +166,18 @@ const Home: React.FC = () => {
                                         <img
                                             src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
                                             alt=""
-                                            className="w-5 h-5 mr-3 inline-block"
+                                            className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
                                             onError={(e) => e.currentTarget.style.display = 'none'}
                                         />
                                     )}
-                                    <span className="font-bold text-base">{tech.name}</span>
+                                    <span className="font-bold text-sm md:text-base">{tech.name}</span>
                                 </motion.div>
                             ))}
                         </motion.div>
 
                         {/* Row 2 */}
                         <motion.div
-                            className="flex gap-6 w-max"
+                            className="flex gap-4 md:gap-6 w-max"
                             animate={{ x: ["-50%", "0%"] }}
                             transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
                         >
@@ -185,7 +185,7 @@ const Home: React.FC = () => {
                                 <motion.div
                                     key={`${tech.name}-${idx}`}
                                     whileHover={{ scale: 1.05, y: -2 }}
-                                    className="flex items-center px-6 py-3 rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
+                                    className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
                                     style={{
                                         backgroundColor: `${tech.color}15`,
                                         borderColor: `${tech.color}30`,
@@ -196,11 +196,11 @@ const Home: React.FC = () => {
                                         <img
                                             src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
                                             alt=""
-                                            className="w-5 h-5 mr-3 inline-block"
+                                            className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
                                             onError={(e) => e.currentTarget.style.display = 'none'}
                                         />
                                     )}
-                                    <span className="font-bold text-base">{tech.name}</span>
+                                    <span className="font-bold text-sm md:text-base">{tech.name}</span>
                                 </motion.div>
                             ))}
                         </motion.div>
