@@ -44,7 +44,7 @@ const Education: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    <div className="flex flex-col items-end gap-2 mt-2 md:mt-0 shrink-0">
+                                    <div className="flex flex-col items-start md:items-end gap-2 mt-3 md:mt-0 shrink-0">
                                         <p className="text-secondary/70 text-xs font-medium bg-blue-50/50 px-3 py-1 rounded-full border border-blue-100 flex items-center">
                                             📍 {edu.location}
                                         </p>
