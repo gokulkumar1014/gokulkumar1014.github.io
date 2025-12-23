@@ -20,8 +20,8 @@ const Home: React.FC = () => {
                     <span className="text-accent-dark font-bold tracking-wide uppercase text-xs bg-white/60 backdrop-blur-md border border-white/50 px-4 py-2 rounded-full inline-block shadow-sm">
                         Welcome to my portfolio
                     </span>
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary tracking-tight leading-[1.1]">
-                        Hi, I'm <span className="text-accent">Gokul Kumar Kesavan.</span>
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary tracking-tight leading-[1.1]">
+                        Hi, I'm <span className="text-accent inline-block">Gokul Kumar Kesavan.</span>
                         <br />
                         <span className="text-secondary/80 text-3xl md:text-4xl lg:text-5xl block mt-2">I build decision-ready analytics systems.</span>
                     </h1>
