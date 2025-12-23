@@ -9,13 +9,13 @@ const Home: React.FC = () => {
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
-            <section className="min-h-[80vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-12 pb-10 gap-10 md:gap-16">
+            <section className="min-h-[80vh] flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pt-32 pb-12 gap-8 md:gap-16">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="flex-1 space-y-8 text-center md:text-left order-2 md:order-1 relative z-10"
+                    className="flex-1 space-y-8 text-center md:text-left order-2 md:order-1 relative z-10 w-full"
                 >
                     <span className="text-accent-dark font-bold tracking-wide uppercase text-xs bg-white/60 backdrop-blur-md border border-white/50 px-4 py-2 rounded-full inline-block shadow-sm">
                         Welcome to my portfolio
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="flex-1 max-w-md w-full order-1 md:order-2 relative"
+                    className="flex-1 max-w-[280px] sm:max-w-sm md:max-w-md w-full order-1 md:order-2 relative"
                 >
                     {/* Background Blob */}
                     <motion.div
