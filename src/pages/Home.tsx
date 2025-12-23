@@ -109,7 +109,7 @@ const Home: React.FC = () => {
             </section>
 
             {/* "What I Do" Section */}
-            <Section className="bg-white/40 backdrop-blur-xl rounded-3xl md:rounded-[3rem] my-10 mx-auto shadow-sm border border-white/50 p-6 md:p-16 relative overflow-hidden">
+            <Section className="bg-white/40 backdrop-blur-xl rounded-3xl md:rounded-[3rem] my-10 mx-auto w-full max-w-full shadow-sm border border-white/50 p-6 md:p-16 relative overflow-hidden">
 
                 {/* Decorative background Elements for Section */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
 
                 <div className="mt-20">
                     <h3 className="text-lg font-bold mb-8 text-primary uppercase tracking-wider opacity-70 text-center">Tech Stack</h3>
-                    <div className="relative w-full overflow-hidden pt-8 pb-12">
+                    <div className="relative w-full max-w-[85vw] mx-auto overflow-hidden pt-8 pb-12">
                         {/* Gradient Masks for edges */}
                         <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
                         <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
