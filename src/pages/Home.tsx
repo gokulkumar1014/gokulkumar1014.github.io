@@ -33,7 +33,7 @@ const Home: React.FC = () => {
 
                     <div className="flex flex-wrap items-center gap-4 justify-center md:justify-start pt-4">
                         <a
-                            href="https://drive.google.com/file/d/1-bpAzb634Qqf9jy-wmgcnmMRrx08BspV/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1gxmFwHQLd5RlSQPjMob6M1pZKe8kqk82/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center px-8 py-4 rounded-full bg-red-600 text-white font-bold hover:bg-red-700 hover:scale-105 hover:shadow-xl transition-all duration-300"
