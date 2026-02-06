@@ -5,9 +5,9 @@ import { clsx } from 'clsx';
 
 const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Education', path: '/education' },
     { name: 'Projects', path: '/projects' },
     { name: 'Experience', path: '/experience' },
+    { name: 'Education', path: '/education' },
     { name: 'Credentials', path: '/credentials' },
     { name: 'Contact', path: '/contact' },
 ];
