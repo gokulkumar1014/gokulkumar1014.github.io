@@ -409,6 +409,16 @@ export const education = [
 
 export const certifications = [
     {
+        id: 0,
+        title: "PyTorch for Deep Learning",
+        issuer: "DeepLearning.AI",
+        date: "Feb 2026",
+        credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/K5B7CY7P6Y62",
+        kind: "Coursera",
+        link: "https://www.coursera.org/account/accomplishments/specialization/K5B7CY7P6Y62",
+        logo: "/logos/prob_stats_ml.png"
+    },
+    {
         id: 1,
         title: "IBM RAG and Agentic AI (Specialization)",
         issuer: "IBM",
