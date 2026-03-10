@@ -42,12 +42,12 @@ const Home: React.FC = () => {
                             Resume
                         </a>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 flex-wrap">
                             <a
                                 href="https://www.linkedin.com/in/gokul-kumar-kesavan/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-4 rounded-full bg-white text-blue-600 border border-blue-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300"
+                                className="p-4 rounded-full bg-white text-blue-600 border border-blue-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300 flex items-center justify-center"
                                 aria-label="LinkedIn"
                             >
                                 <Linkedin size={24} />
@@ -56,10 +56,28 @@ const Home: React.FC = () => {
                                 href="https://github.com/gokulkumar1014"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-4 rounded-full bg-white text-gray-800 border border-gray-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300"
+                                className="p-4 rounded-full bg-white text-gray-800 border border-gray-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300 flex items-center justify-center"
                                 aria-label="GitHub"
                             >
                                 <Github size={24} />
+                            </a>
+                            <a
+                                href="https://leetcode.com/u/gokul1014/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 rounded-full bg-white border border-orange-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300 flex items-center justify-center"
+                                aria-label="LeetCode"
+                            >
+                                <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" className="w-6 h-6" />
+                            </a>
+                            <a
+                                href="https://medium.com/@gokulkumar0639"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 rounded-full bg-white border border-gray-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300 flex items-center justify-center"
+                                aria-label="Medium"
+                            >
+                                <img src="https://cdn.simpleicons.org/medium/000000" alt="Medium" className="w-6 h-6" />
                             </a>
                         </div>
                     </div>
