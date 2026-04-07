@@ -169,6 +169,17 @@ export interface Project {
 export const projects: Project[] = [
     // --- GRAD PROJECTS (Featured First) ---
     {
+        id: 115,
+        title: "Retention-Sync: Multi-Modal Churn and Recommendation Intelligence",
+        level: "GRAD",
+        description: "Cloud-native intelligence engine fusing visual DNA (CNN embeddings) with sequential velocity to predict real-time retail style drift and customer churn.",
+        technologies: ["GCP", "Big Data", "ML", "Two-Tower NN", "Polars", "Cloud Run"],
+        link: "https://github.com/gokulkumar1014/hm-fashion-churn-multimodal",
+        featured: true,
+        categoryHint: "AI",
+        image: "/hm_fashion_churn.png"
+    },
+    {
         id: 101,
         title: "WTCHTWR - AI-Powered STR Analytics Agent",
         level: "GRAD",
@@ -186,7 +197,6 @@ export const projects: Project[] = [
         description: "Serverless RAG assistant that extracts intent, retrieves real interview experiences from the web, and generates a structured prep guide with sources.",
         technologies: ["AWS Lambda", "Bedrock", "Claude", "Streamlit", "Tavily", "RAG"],
         link: "https://github.com/gokulkumar1014/EdgeCoach-AI-Interview-Intelligence-Agent",
-        featured: true,
         categoryHint: "AI",
         image: "/edgecoach_ai.png"
     },
