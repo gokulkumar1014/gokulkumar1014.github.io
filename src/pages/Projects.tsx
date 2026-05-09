@@ -7,7 +7,7 @@ import PageWithSideImage from '../components/PageWithSideImage';
 const Projects: React.FC = () => {
     const [filter, setFilter] = useState("ALL");
     const [searchQuery, setSearchQuery] = useState("");
-    const levels = ["ALL", "GRAD", "UNDERGRAD"];
+    const levels = ["ALL", "BA CORE", "TECH"];
 
     // Filter and Sort Logic
     const filteredAndSortedProjects = useMemo(() => {
@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
 
         // 1. Level Filter
         if (filter !== "ALL") {
-            result = result.filter(p => p.level === filter);
+            result = result.filter(p => p.level === (filter === "BA CORE" ? "BA" : filter) || p.level === "BOTH");
         }
 
         // 2. Search Query
@@ -128,14 +128,18 @@ const Projects: React.FC = () => {
 
                             <div className="p-6 flex flex-col flex-grow">
                                 <div className="flex justify-between items-start mb-2">
-                                    <span className={clsx(
-                                        "text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded",
-                                        project.level === 'GRAD'
-                                            ? 'bg-purple-100 text-purple-600'
-                                            : 'bg-blue-100 text-accent'
-                                    )}>
-                                        {project.level}
-                                    </span>
+                                    <div className="flex gap-1.5">
+                                    {(project.level === "BOTH" || project.level === "BA") && (
+                                        <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-100 text-purple-600">
+                                            BA CORE
+                                        </span>
+                                    )}
+                                    {(project.level === "BOTH" || project.level === "TECH") && (
+                                        <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-accent">
+                                            TECH
+                                        </span>
+                                    )}
+                                </div>
                                 </div>
 
                                 <h3 className="text-lg font-bold text-primary mb-2 leading-tight group-hover:text-accent transition-colors flex items-center gap-2">

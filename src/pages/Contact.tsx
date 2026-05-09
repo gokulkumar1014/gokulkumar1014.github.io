@@ -77,9 +77,9 @@ const Contact: React.FC = () => {
                         </div>
 
                         {/* Hook & Quote */}
-                        <div className="bg-gradient-to-br from-blue-50/50 to-white p-8 rounded-2xl border border-blue-100/50">
-                            <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                                "I’m actively looking for full-time roles in <span className="font-bold text-blue-700">Business Analytics</span>, <span className="font-bold text-blue-700">AI/ML</span> and <span className="font-bold text-blue-700">Data Analytics</span> - while staying open to meaningful projects, collaborations, and product ideas."
+                        <div className="bg-gradient-to-br from-blue-50/50 to-white p-6 rounded-2xl border border-blue-100/50">
+                            <p className="text-gray-700 leading-relaxed text-lg mb-4">
+                                "I'm actively looking for full-time <span className="font-bold text-blue-700">Business Analyst</span> roles - while staying open to meaningful collaborations and opportunities."
                             </p>
 
                             <div className="flex items-center gap-3 pt-4 border-t border-blue-100/50">
@@ -148,7 +148,7 @@ const Contact: React.FC = () => {
                     <div className="h-fit sticky top-24">
                         <div className="mb-8">
                             <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">Get in Touch</h1>
-                            <p className="text-gray-500 text-lg">Have a project in mind or want to say hello?</p>
+                            <p className="text-gray-500 text-lg">Let's talk - whether it's a role, a challenge or a conversation.</p>
                         </div>
                         <form
                             ref={formRef}

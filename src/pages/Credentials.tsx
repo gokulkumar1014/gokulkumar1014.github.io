@@ -25,7 +25,7 @@ const Credentials: React.FC = () => {
             <Section className="py-6 md:py-10">
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">Credentials</h1>
-                    <p className="text-gray-500 text-lg">Academic papers, certifications, and professional awards.</p>
+                    <p className="text-gray-500 text-lg">Certifications, professional awards, and academic papers.</p>
                 </div>
 
                 {/* Certifications Section */}
@@ -107,12 +107,82 @@ const Credentials: React.FC = () => {
                     ))}
                 </motion.div>
 
-                {/* Publications Section */}
+                {/* Honors & Awards Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
+                    className="mt-12 pt-8 border-t border-gray-100"
+                >
+                    <div className="flex items-center gap-3 mb-8">
+                        <div className="p-2.5 bg-red-50 text-red-600 rounded-lg shadow-sm border border-red-100">
+                            <Medal size={24} />
+                        </div>
+                        <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">Honors & Awards</h2>
+                    </div>
+
+                    <div className="grid gap-4">
+                        {awards.map((award) => (
+                            <div
+                                key={award.id}
+                                className="bg-white p-6 rounded-2xl border border-gray-100 hover:border-yellow-200 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 group relative overflow-hidden"
+                            >
+                                <div className="absolute inset-0 bg-gradient-to-r from-yellow-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                                <div className="relative z-10 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                                    <div className="flex-grow">
+                                        <h3 className="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors mb-2">
+                                            {award.title}
+                                        </h3>
+                                        <p className="text-gray-600 mb-3">{award.description}</p>
+
+                                        <div className="flex flex-wrap items-center gap-3 text-sm">
+                                            <span className="font-semibold text-gray-700 flex items-center gap-1.5">
+                                                <GraduationCap size={14} className="text-gray-400" />
+                                                {award.institution}
+                                            </span>
+                                            <span className="text-gray-400 font-medium flex items-center gap-1.5">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                                                {award.date}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className="shrink-0 pt-1">
+                                        {/* @ts-ignore */}
+                                        {award.amount ? (
+                                            <div className="inline-flex flex-col items-end">
+                                                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Value</span>
+                                                <span className="text-lg font-bold text-green-600 bg-green-50 px-3 py-1 rounded-lg border border-green-100">
+                                                    {award.amount}
+                                                </span>
+                                            </div>
+                                        ) : /* @ts-ignore */ award.link ? (
+                                            <a
+                                                /* @ts-ignore */
+                                                href={award.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-700 rounded-full text-sm font-semibold hover:bg-yellow-500 hover:text-white hover:shadow-md transition-all duration-300"
+                                            >
+                                                <span>View Invitation</span>
+                                                <ExternalLink size={14} />
+                                            </a>
+                                        ) : null}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </motion.div>
+
+                {/* Publications Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
                     className="mt-12 pt-8 border-t border-gray-100"
                 >
                     <div className="flex items-center gap-3 mb-8">
@@ -157,62 +227,6 @@ const Credentials: React.FC = () => {
                                             <span>Read Paper</span>
                                             <ExternalLink size={14} className="transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </motion.div>
-
-                {/* Honors & Awards Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3 }}
-                    className="mt-12 pt-8 border-t border-gray-100"
-                >
-                    <div className="flex items-center gap-3 mb-8">
-                        <div className="p-2.5 bg-red-50 text-red-600 rounded-lg shadow-sm border border-red-100">
-                            <Medal size={24} />
-                        </div>
-                        <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">Honors & Awards</h2>
-                    </div>
-
-                    <div className="grid gap-4">
-                        {awards.map((award) => (
-                            <div
-                                key={award.id}
-                                className="bg-white p-6 rounded-2xl border border-gray-100 hover:border-yellow-200 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 group relative overflow-hidden"
-                            >
-                                <div className="absolute inset-0 bg-gradient-to-r from-yellow-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-                                <div className="relative z-10 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                                    <div className="flex-grow">
-                                        <h3 className="text-lg font-bold text-gray-900 group-hover:text-yellow-700 transition-colors mb-2">
-                                            {award.title}
-                                        </h3>
-                                        <p className="text-gray-600 mb-3">{award.description}</p>
-
-                                        <div className="flex flex-wrap items-center gap-3 text-sm">
-                                            <span className="font-semibold text-gray-700 flex items-center gap-1.5">
-                                                <GraduationCap size={14} className="text-gray-400" />
-                                                {award.institution}
-                                            </span>
-                                            <span className="text-gray-400 font-medium flex items-center gap-1.5">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
-                                                {award.date}
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div className="shrink-0 pt-1">
-                                        <div className="inline-flex flex-col items-end">
-                                            <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Value</span>
-                                            <span className="text-lg font-bold text-green-600 bg-green-50 px-3 py-1 rounded-lg border border-green-100">
-                                                {award.amount}
-                                            </span>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

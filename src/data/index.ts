@@ -19,42 +19,32 @@ export type TechItem = {
 };
 
 export const expertise: TechItem[] = [
-    { name: "Python", color: "#3776AB", logo: "python" },
-    { name: "pandas", color: "#150458", logo: "pandas" },
-    { name: "numpy", color: "#013243", logo: "numpy" },
-    { name: "matplotlib", color: "#11557c", logo: "python" },
-    { name: "R", color: "#276DC3", logo: "r" },
-    { name: "SQL", color: "#336791", logo: "postgresql" },
+    // Row 1 — BA Core (indices 0-12, shown in first carousel row)
     { name: "Excel", color: "#217346", logo: "microsoftexcel" },
-
-    { name: "React", color: "#61DAFB", logo: "react" },
-    { name: "FastAPI", color: "#009688", logo: "fastapi" },
+    { name: "SQL", color: "#336791", logo: "postgresql" },
+    { name: "Power BI", color: "#F2C811", logo: "powerbi" },
     { name: "Tableau", color: "#E97627", logo: "tableau" },
-    { name: "PowerBI", color: "#F2C811", logo: "powerbi" },
+    { name: "Agile / Scrum", color: "#0052CC", logo: "agile" },
+    { name: "Salesforce", color: "#00A1E0", logo: "salesforce" },
+    { name: "Jira", color: "#0052CC", logo: "jira" },
+    { name: "Confluence", color: "#172B4D", logo: "confluence" },
+    { name: "Visio", color: "#3955A3", logo: "microsoftvisio" },
+    { name: "Lucidchart", color: "#FF6C37", logo: "lucid" },
+    { name: "BPMN", color: "#005A9C", logo: "diagramsdotnet" },
+    { name: "UAT", color: "#4CAF50", logo: "checkmarx" },
+    { name: "Statistics", color: "#276DC3", logo: "r" },
 
-    { name: "ScikitLearn", color: "#F7931E", logo: "scikitlearn" },
-    { name: "TensorFlow", color: "#FF6F00", logo: "tensorflow" },
-    { name: "PyTorch", color: "#EE4C2C", logo: "pytorch" },
-    { name: "LangChain", color: "#1C3C3C", logo: "langchain" },
-    { name: "LangGraph", color: "#614A94", logo: "langchain" },
-    { name: "RAG", color: "#F44336", logo: "openai" },
-
-    { name: "DuckDB", color: "#9835d1ff", logo: "duckdb" },
-    { name: "ChromaDB", color: "#FB542B", logo: "redis" },
-    { name: "Qdrant", color: "#B31B1B", logo: "qdrant" },
-    { name: "FAISS", color: "#005A9C", logo: "meta" },
-    { name: "PostgreSQL", color: "#336791", logo: "postgresql" },
-
+    // Row 2 — Technical Edge (indices 13+, shown in second carousel row)
+    { name: "Python", color: "#3776AB", logo: "python" },
+    { name: "Database Mgt", color: "#336791", logo: "postgresql" },
+    { name: "Vector Database", color: "#9835D1", logo: "duckdb" },
     { name: "AWS", color: "#232F3E", logo: "amazonaws" },
-    { name: "Apache Spark", color: "#E25A1C", logo: "apachespark" },
-    { name: "Docker", color: "#2496ED", logo: "docker" },
-
-    { name: "Gurobi", color: "#DA291C", logo: "python" },
-    { name: "Statistics", color: "#005A9C", logo: "kaggle" },
+    { name: "GCP", color: "#4285F4", logo: "googlecloud" },
+    { name: "Machine Learning", color: "#F7931E", logo: "scikitlearn" },
+    { name: "Agentic AI", color: "#1C3C3C", logo: "langchain" },
+    { name: "API Integration", color: "#009688", logo: "fastapi" },
+    { name: "FastAPI", color: "#009688", logo: "fastapi" },
     { name: "Git/GitHub", color: "#F05032", logo: "github" },
-    { name: "MLOps", color: "#00B8D9", logo: "githubactions" },
-    { name: "Optimization", color: "#7E57C2", logo: "python" },
-    { name: "Risk Analytics", color: "#F44336", logo: "googleanalytics" }
 ];
 
 export type ExperienceItem = {
@@ -71,15 +61,28 @@ export type ExperienceItem = {
 export const experiences: ExperienceItem[] = [
     // (1) PROFESSIONAL EXPERIENCE
     {
+        id: "prof-0",
+        title: "Business Analyst",
+        org: "Community Dreams Foundation",
+        dates: "Apr 2026 – Present",
+        location: "Remote (Arlington, VA)",
+        bullets: [
+            "Audited operational workflows to identify process gaps and built business cases for technology initiatives to improve delivery efficiency.",
+            "Gathered and translated business objectives into actionable requirements through structured engagement with executive and technical stakeholders.",
+            "Monitored project milestones via data analysis and enforced quality standards across the solution lifecycle."
+        ],
+        section: "Professional"
+    },
+    {
         id: "prof-1",
         title: "Business & Consulting Analyst",
         org: "COLOURS GLOBAL, INC. (Internship)",
         dates: "Feb 2025 – Apr 2025",
         location: "Washington, D.C., United States",
         bullets: [
-            "Conducted contract research and identified 10+ high-impact government RFPs aligned with strategic focus areas.",
-            "Authored an API Integration Strategy Sheet recommending event-based APIs (Ticketmaster, Eventbrite, OpenTable).",
-            "Evaluated API feasibility, security, and scalability to shape a roadmap for data-driven expansion."
+            "Analyzed government RFP data across Agile sprints, identified 10+ high-value opportunities, and delivered a strategic roadmap to executive stakeholders.",
+            "Led requirements gathering for a platform expansion by mapping third-party API schemas (Ticketmaster, Eventbrite, OpenTable) to align solutions with business objectives.",
+            "Assessed API feasibility, security, and scalability to author an Integration Strategy Sheet driving data-driven expansion decisions."
         ],
         section: "Professional",
         recommendation: "https://www.linkedin.com/in/gokul-kumar-kesavan/details/recommendations/"
@@ -91,7 +94,7 @@ export const experiences: ExperienceItem[] = [
         dates: "Mar 2023 – May 2023",
         location: "India",
         bullets: [
-            "Performed a data-driven feasibility study for a potential e-commerce startup; improved portfolio efficiency by ~17% via financial modeling.",
+            "Performed a data-driven feasibility study for a potential e-commerce startup; improved portfolio efficiency by 20% via financial modeling.",
             "Led market + competitor analysis to inform pricing strategy and reduce operating costs by ~10%.",
             "Built interactive KPI dashboards in Power BI and Excel to communicate outcomes to stakeholders."
         ],
@@ -157,7 +160,7 @@ export const experiences: ExperienceItem[] = [
 export interface Project {
     id: number;
     title: string;
-    level: "GRAD" | "UNDERGRAD";
+    level: "BA" | "TECH" | "BOTH";
     description: string;
     technologies: string[];
     link: string;
@@ -171,9 +174,9 @@ export const projects: Project[] = [
     {
         id: 115,
         title: "Retention-Sync: Multi-Modal Churn and Recommendation Intelligence",
-        level: "GRAD",
-        description: "Cloud-native intelligence engine fusing visual DNA (CNN embeddings) with sequential velocity to predict real-time retail style drift and customer churn.",
-        technologies: ["GCP", "Big Data", "ML", "Two-Tower NN", "Polars", "Cloud Run"],
+        level: "BOTH",
+        description: "Identified high-risk churn segments for a retail fashion brand by analyzing customer purchasing patterns and style preferences - enabling targeted CRM interventions and personalized recommendations to improve retention.",
+        technologies: ["Retail Analytics", "CRM", "Churn Analysis", "Customer Intelligence", "Style Segmentation"],
         link: "https://github.com/gokulkumar1014/hm-fashion-churn-multimodal",
         featured: true,
         categoryHint: "AI",
@@ -182,9 +185,9 @@ export const projects: Project[] = [
     {
         id: 101,
         title: "WTCHTWR - AI-Powered STR Analytics Agent",
-        level: "GRAD",
-        description: "AI-native analytics engine for short-term rental operators - deterministic agent workflows, hybrid SQL + RAG, and review intelligence at scale.",
-        technologies: ["LangGraph", "FastAPI", "DuckDB", "React", "OpenAI", "Qdrant"],
+        level: "BOTH",
+        description: "Built an AI-powered decision support tool for short-term rental operators - translating market data and guest review sentiment into actionable revenue strategies and competitive positioning insights.",
+        technologies: ["Short-Term Rental", "Agentic AI", "Market Intelligence", "Revenue Analytics", "Review Analysis"],
         link: "https://github.com/gokulkumar1014/wtchtwr-ai-agent",
         featured: true,
         categoryHint: "AI",
@@ -193,7 +196,7 @@ export const projects: Project[] = [
     {
         id: 102,
         title: "EdgeCoach AI - Interview Intelligence Agent",
-        level: "GRAD",
+        level: "TECH",
         description: "Serverless RAG assistant that extracts intent, retrieves real interview experiences from the web, and generates a structured prep guide with sources.",
         technologies: ["AWS Lambda", "Bedrock", "Claude", "Streamlit", "Tavily", "RAG"],
         link: "https://github.com/gokulkumar1014/EdgeCoach-AI-Interview-Intelligence-Agent",
@@ -203,9 +206,9 @@ export const projects: Project[] = [
     {
         id: 103,
         title: "Federal Committees Contribution Analysis",
-        level: "GRAD",
-        description: "Large-scale Spark + SQL analysis of U.S. federal committee contributions to uncover donor patterns and geographic influence.",
-        technologies: ["Apache Spark", "SQL", "Big Data", "Data Cleaning", "Analytics"],
+        level: "BA",
+        description: "Analyzed U.S. federal campaign contribution data to uncover donor behavior patterns, geographic influence clusters, and funding trends - delivering stakeholder intelligence for policy-focused decision-making.",
+        technologies: ["Policy Analysis", "Donor Patterns", "Geographic Intelligence", "Stakeholder Mapping", "Public Sector"],
         link: "https://github.com/gokulkumar1014/analysis-of-federal-committees-contribution",
         image: "/federal_contribution.png"
     },
@@ -213,7 +216,7 @@ export const projects: Project[] = [
     {
         id: 109,
         title: "Capital Bikeshare - ML Pipeline",
-        level: "GRAD",
+        level: "TECH",
         description: "End-to-end supervised learning workflow covering regression, classification, and regularization on Bikeshare data.",
         technologies: ["Python", "scikit-learn", "Regression", "Cross-Validation"],
         link: "https://github.com/gokulkumar1014/Capital-Bikeshare-ML-Supervised",
@@ -222,7 +225,7 @@ export const projects: Project[] = [
     {
         id: 108,
         title: "Heart Disease Data Management Architecture",
-        level: "GRAD",
+        level: "TECH",
         description: "Cloud-based relational database system on AWS EC2, implementing normalized data modeling (ERD), complex SQL querying, and secure pipeline architecture for healthcare data.",
         technologies: ["AWS EC2", "SQL", "Data Modeling", "PostgreSQL", "ER Diagrams", "Python"],
         link: "https://github.com/gokulkumar1014/indicators-of-heart-disease",
@@ -231,16 +234,16 @@ export const projects: Project[] = [
     {
         id: 110,
         title: "Walmart Rollback Pricing Strategy Optimization",
-        level: "GRAD",
-        description: "Marketing analytics project using customer segmentation and predictive modeling to optimize rollback discounts and forecast revenue impact.",
-        technologies: ["R", "tidyverse", "ggplot2", "caret", "KNN Imputation", "Regression"],
+        level: "BA",
+        description: "Developed a pricing optimization strategy for Walmart's rollback program by segmenting customer behavior, modeling discount sensitivity, and forecasting revenue impact to guide marketing investment decisions.",
+        technologies: ["Pricing Strategy", "Customer Segmentation", "Revenue Forecasting", "Discount Optimization", "Marketing Analytics"],
         link: "https://github.com/gokulkumar1014/Walmart-Rollback-Pricing-Strategy-Optimization",
         image: "/walmart_blue_colorful.png"
     },
     {
         id: 104,
         title: "Pacific Coast Development Analytics",
-        level: "GRAD",
+        level: "TECH",
         description: "Spatial and market benchmark analysis regarding airport noise exposure and housing pricing near Salinas/Watsonville.",
         technologies: ["R", "tidyverse", "sf", "ggplot2", "Quarto", "Geospatial"],
         link: "https://github.com/gokulkumar1014/airport-proximity-real-estate-analytics",
@@ -250,36 +253,36 @@ export const projects: Project[] = [
     {
         id: 105,
         title: "Mobile Feast - Operational Analytics",
-        level: "GRAD",
-        description: "Spatial, demographic, and temporal analysis to optimize routing, scheduling, and pricing for multi-city food trucks.",
-        technologies: ["R", "tidyverse", "ggplot2", "lubridate", "Quarto"],
+        level: "BA",
+        description: "Delivered operational analytics for a multi-city food truck business - identifying optimal routes, peak demand windows, and pricing levers to maximize revenue and reduce scheduling inefficiency.",
+        technologies: ["Route Optimization", "Operational Planning", "Pricing Strategy", "Demographic Analysis", "F&B Industry"],
         link: "https://github.com/gokulkumar1014/mobile-feast-operational-analytics",
         image: "/mobile_feast.png"
     },
     {
         id: 111,
         title: "Operations Research Optimization Modeling",
-        level: "GRAD",
-        description: "Linear programming + Gurobi decision models for profit maximization, scenario analysis, sensitivity (shadow prices), and procurement planning.",
-        technologies: ["Python", "Gurobi", "Linear Programming", "Sensitivity Analysis", "pandas"],
+        level: "BA",
+        description: "Built decision models for profit maximization and procurement planning - translating complex business constraints into actionable strategies through sensitivity and scenario analysis.",
+        technologies: ["Decision Modeling", "Profit Maximization", "Procurement Planning", "Scenario Analysis", "Cost Optimization"],
         link: "https://github.com/gokulkumar1014/Operations-Research-Optimization-Modeling-Portfolio",
         image: "/retail_analytics.png" // Fallback to existing relevant image as gen failed
     },
     {
         id: 106,
         title: "EduTravel - Customer Retention Modeling",
-        level: "GRAD",
-        description: "Statistical storytelling to identify loyalty drivers using booking behavior, meeting cadence, and operational factors.",
-        technologies: ["R", "tidyverse", "ggplot2", "Quarto", "Segmentation"],
+        level: "BA",
+        description: "Uncovered key loyalty drivers for an edu-travel company by analyzing booking cadence, meeting patterns, and operational factors - delivering data-backed recommendations to reduce churn and improve retention.",
+        technologies: ["Customer Retention", "Loyalty Analytics", "Booking Behavior", "Churn Drivers", "Travel Industry"],
         link: "https://github.com/gokulkumar1014/edutravel-customer-retention-modeling",
         image: "/edutravel_retention.png"
     },
     {
         id: 107,
         title: "DataMart - Customer Analytics",
-        level: "GRAD",
-        description: "Retail intelligence case using demographics, basket relationships, and value-risk segmentation for targeting.",
-        technologies: ["R", "tidyverse", "ggplot2", "Quarto", "Segmentation"],
+        level: "BA",
+        description: "Profiled a retail customer base using demographic analysis, basket relationships, and value-risk segmentation — enabling targeted marketing strategies and improving campaign precision for high-value customers.",
+        technologies: ["Customer Segmentation", "Basket Analysis", "Value-Risk Profiling", "Retail Intelligence", "Demographic Targeting"],
         link: "https://github.com/gokulkumar1014/datamart-customer-segmentation",
         image: "/datamart_analytics_lightblue.png"
     },
@@ -290,7 +293,7 @@ export const projects: Project[] = [
     {
         id: 1,
         title: "Traffic Light System Using 8051",
-        level: "UNDERGRAD",
+        level: "TECH",
         description: "4-way traffic signal controller using 8051 with LED sequencing and 7-segment countdown timing.",
         technologies: ["8051", "Embedded C/ASM", "LEDs", "7-Segment Display", "Proteus"],
         link: "https://github.com/gokulkumar1014/Traffic-Light-System-Uisng-8051-Microcontroller",
@@ -299,7 +302,7 @@ export const projects: Project[] = [
     {
         id: 2,
         title: "Hearing Aid with Binary Masking",
-        level: "UNDERGRAD",
+        level: "TECH",
         description: "Speech enhancement approach using STFT + binary masking to improve intelligibility in noisy environments.",
         technologies: ["MATLAB", "DSP", "STFT", "Binary Masking", "Speech Enhancement"],
         link: "https://github.com/gokulkumar1014/-Implementation-Of-Hearing-Aid-Using-Binary-Masking",
@@ -308,7 +311,7 @@ export const projects: Project[] = [
     {
         id: 3,
         title: "IoT-Enabled Smart Home Appliances",
-        level: "UNDERGRAD",
+        level: "TECH",
         description: "Arduino-based home automation prototype using sensor triggers for lighting, security, and appliance control.",
         technologies: ["Arduino UNO", "MQ6", "PIR", "Ultrasonic", "LDR", "Relays"],
         link: "https://github.com/gokulkumar1014/IoT-Enabled-Smart-Home-Appliances",
@@ -317,7 +320,7 @@ export const projects: Project[] = [
     {
         id: 4,
         title: "Obstacle Avoiding Robot",
-        level: "UNDERGRAD",
+        level: "TECH",
         description: "Mobile robot that navigates autonomously using ultrasonic distance sensing and motor driver control.",
         technologies: ["Arduino UNO", "HC-SR04", "Servo", "Motor Driver", "GPS module"],
         link: "https://github.com/gokulkumar1014/Obstacle-Avoiding-Robot",
@@ -326,7 +329,7 @@ export const projects: Project[] = [
     {
         id: 5,
         title: "Gesture-to-Speech Wearable Glove",
-        level: "UNDERGRAD",
+        level: "TECH",
         description: "Wearable glove that maps hand gestures to pre-defined voice prompts to assist paralysis patients.",
         technologies: ["Sensors", "Embedded System", "Gesture Mapping", "Voice Output"],
         link: "https://github.com/gokulkumar1014/Gesture-to-speech-wearable-glove-for-paralysis-patients",
@@ -346,27 +349,25 @@ export const education = [
             {
                 title: "What this degree meant to me",
                 items: [
-                    "Came in wanting to “learn analytics” - left knowing how to build systems that think, reason, and make decisions.",
-                    "Spent most of my time turning messy ideas into working pipelines, not just notebooks.",
-                    "Learned the hard difference between models that look good on paper and systems that actually hold up in practice.",
-                    "This program pushed me from student to builder."
+                    "Came in to learn analytics - left with a clear identity as a Business Analyst who can translate data into decisions, not just dashboards.",
+                    "Learned that the real skill isn't the model - it's knowing which business question to ask before building anything.",
+                    "This program pushed me from analyst-in-theory to practitioner who can own the full BA lifecycle."
                 ]
             },
             {
                 title: "How I really learned",
                 items: [
-                    "Built agentic systems where every step had to be explainable, debuggable, and deterministic.",
-                    "Broke things constantly - data pipelines, models, assumptions - and learned how to fix them properly.",
-                    "Learned to think in trade-offs: accuracy vs. interpretability, speed vs. rigor, automation vs. control.",
-                    "Stopped treating AI as magic and started treating it as engineering."
+                    "Worked on projects where stakeholders had real constraints - budgets, timelines, ambiguous requirements - and learned to navigate all of them.",
+                    "Developed the discipline to document, validate, and communicate findings rather than just running the analysis.",
+                    "Learned to frame every output around a decision - not just a number."
                 ]
             },
             {
-                title: "What I’m proud of",
+                title: "What I'm proud of",
                 items: [
-                    "WTCHTWR - an AI-native analytics engine that blends SQL, RAG, and agent workflows into real decisions.",
-                    "EdgeCoach AI - built under time pressure, deployed serverlessly, and designed for real users with real deadlines.",
-                    "Earning the <strong>GWSB Fellowship Award</strong>, FOR ACADEMIC EXCELLANCE IN UNDERGRADUATE."
+                    "WTCHTWR - designed as a decision support tool for rental operators, not just a tech demo.",
+                    "Walmart, EduTravel, DataMart - projects where business impact was the metric, not model accuracy.",
+                    "Earning the <strong>Beta Gamma Sigma membership invitation</strong> from GWU for academic excellence."
                 ]
             }
         ],
@@ -392,17 +393,17 @@ export const education = [
             {
                 title: "What shaped me here",
                 items: [
-                    "This is where I learned how systems actually work - pins, signals, timing, failures.",
-                    "Debugging hardware taught me patience, precision, and respect for fundamentals.",
-                    "If something didn’t work, there was no abstraction to hide behind - you had to understand it."
+                    "An engineering foundation that taught me how to break a complex system into its smallest parts and understand each one.",
+                    "Learned that every requirement matters - a missed constraint in hardware means total failure, not a warning message.",
+                    "This precision carries directly into requirements analysis and process mapping."
                 ]
             },
             {
                 title: "What stuck with me",
                 items: [
-                    "Building things from scratch before libraries existed to help.",
-                    "Thinking in constraints - power, time, memory - long before cloud compute made things easy.",
-                    "Realizing that good engineering starts with clarity, not complexity."
+                    "Working under strict constraints taught me to prioritize ruthlessly - a skill that defines good BA work.",
+                    "Documenting system behavior before building it - that habit became my approach to BRDs and user stories.",
+                    "Good solutions start with clarity of purpose, not complexity of tools."
                 ]
             }
         ],
@@ -418,6 +419,16 @@ export const education = [
 ];
 
 export const certifications = [
+    {
+        id: -1,
+        title: "Microsoft Business Analyst Professional Certificate",
+        issuer: "Microsoft",
+        date: "May 2026",
+        credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/P8JDZSLCF7BD",
+        kind: "Coursera",
+        link: "https://www.coursera.org/account/accomplishments/specialization/P8JDZSLCF7BD",
+        logo: "https://img.icons8.com/color/96/microsoft.png"
+    },
     {
         id: 0,
         title: "PyTorch for Deep Learning",
@@ -551,6 +562,15 @@ export const publications = [
 ];
 
 export const awards = [
+    {
+        id: 0,
+        title: "Beta Gamma Sigma - International Business Honor Society",
+        institution: "George Washington University School of Business",
+        date: "2025",
+        description: "Distinguished by GWU as one of its most outstanding business students and invited to join Beta Gamma Sigma - recognizing the Top 15% of the graduating class.",
+        link: "https://drive.google.com/file/d/13tV9JJnpyKQWtzoGGvGCPHi4sP3s1O4u/view?usp=sharing",
+        kind: "honor"
+    },
     {
         id: 1,
         title: "GWSB Fellowship Award",

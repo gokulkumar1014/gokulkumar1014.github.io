@@ -25,10 +25,10 @@ const Home: React.FC = () => {
                         <br />
                         <span className="text-accent">Kesavan.</span>
                         <br />
-                        <span className="text-secondary/80 text-3xl md:text-4xl lg:text-5xl block mt-2">I build decision-ready analytics systems.</span>
+                        <span className="text-secondary/80 text-2xl md:text-3xl lg:text-4xl block mt-2 whitespace-nowrap">I bridge business strategy and data.</span>
                     </h1>
                     <p className="text-lg text-secondary/90 max-w-2xl leading-relaxed mx-auto md:mx-0 font-medium">
-                        I’m an MS in Business Analytics graduate focused on designing products that people actually use. My work spans data engineering, machine learning and agentic AI - designing systems that move beyond charts to clear, decision-ready outputs.
+                        MS in Business Analytics graduate covering the full BA lifecycle - requirements gathering, stakeholder engagement, process improvement, and data-backed decision support. Technically equipped with <span className="font-semibold">ML, AI, Data Mgt, Cloud (AWS/GCP), and System Design knowledge.</span>
                     </p>
 
                     <div className="flex flex-wrap items-center gap-4 justify-center md:justify-start pt-4">
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                                 className="p-4 rounded-full bg-white border border-gray-100 shadow-sm hover:scale-110 hover:shadow-md transition-all duration-300 flex items-center justify-center text-black"
                                 aria-label="Medium"
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6.158 3h11.684A3.16 3.16 0 0 1 21 6.158v3.366a4 4 0 0 0-.245-.008a2.91 2.91 0 0 0-2.294 1.1c-.472.586-.758 1.377-.828 2.266q-.022.266-.017.532c.047 2.014 1.135 3.624 3.068 3.624q.162 0 .316-.015v.82A3.16 3.16 0 0 1 17.842 21H6.158A3.16 3.16 0 0 1 3 17.842V6.158A3.16 3.16 0 0 1 6.158 3M21 15.388v-2.726h-1.653c-.074 1.316.646 2.43 1.653 2.726m0-3.107V9.973a1 1 0 0 0-.256-.035c-.815.017-1.3.992-1.36 2.343zM17.697 7.3l.015-.003v-.11h-2.9l-2.69 6.326L9.43 7.187H6.306v.11l.014.003c.529.12.797.298.797.94v7.52c0 .642-.27.82-.798.94l-.014.002v.11h2.12v-.11L8.41 16.7c-.529-.12-.798-.298-.798-.94V8.676l3.458 8.137h.196l3.559-8.364v7.496c-.046.508-.312.665-.791.773l-.014.003v.109h3.692v-.11l-.015-.002c-.48-.108-.752-.265-.797-.773l-.003-7.705h.003c0-.642.268-.82.797-.94"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M6.158 3h11.684A3.16 3.16 0 0 1 21 6.158v3.366a4 4 0 0 0-.245-.008a2.91 2.91 0 0 0-2.294 1.1c-.472.586-.758 1.377-.828 2.266q-.022.266-.017.532c.047 2.014 1.135 3.624 3.068 3.624q.162 0 .316-.015v.82A3.16 3.16 0 0 1 17.842 21H6.158A3.16 3.16 0 0 1 3 17.842V6.158A3.16 3.16 0 0 1 6.158 3M21 15.388v-2.726h-1.653c-.074 1.316.646 2.43 1.653 2.726m0-3.107V9.973a1 1 0 0 0-.256-.035c-.815.017-1.3.992-1.36 2.343zM17.697 7.3l.015-.003v-.11h-2.9l-2.69 6.326L9.43 7.187H6.306v.11l.014.003c.529.12.797.298.797.94v7.52c0 .642-.27.82-.798.94l-.014.002v.11h2.12v-.11L8.41 16.7c-.529-.12-.798-.298-.798-.94V8.676l3.458 8.137h.196l3.559-8.364v7.496c-.046.508-.312.665-.791.773l-.014.003v.109h3.692v-.11l-.015-.002c-.48-.108-.752-.265-.797-.773l-.003-7.705h.003c0-.642.268-.82.797-.94" /></svg>
                             </a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
                             <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse shrink-0" />
                             <span className="text-xs font-bold text-primary leading-tight">
                                 Open to full-time roles: <br />
-                                <span className="font-medium text-secondary">Business Analyst • AI/ML Analytics • Data Analyst</span>
+                                <span className="font-medium text-secondary">Business Analyst • Technical BA • Strategy & Ops</span>
                             </span>
                         </motion.div>
                     </motion.div>
@@ -139,92 +139,107 @@ const Home: React.FC = () => {
                         <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-accent mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
                             <BarChart3 size={28} />
                         </div>
-                        <h3 className="text-2xl font-bold text-primary">Analytics Engineering</h3>
-                        <p className="text-secondary leading-relaxed">I build clean, reliable pipelines and metrics that people can trust - turning raw data into decision-ready outputs.</p>
-                    </div>
-                    <div className="space-y-4 group">
-                        <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-purple-500 mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                            <Brain size={28} />
-                        </div>
-                        <h3 className="text-2xl font-bold text-primary">Machine Learning & Modeling</h3>
-                        <p className="text-secondary leading-relaxed">I design ML workflows end-to-end from feature engineering to evaluation - with models that hold up in the real world.</p>
+                        <h3 className="text-2xl font-bold text-primary">Requirements & Process Analysis</h3>
+                        <p className="text-secondary leading-relaxed">Eliciting and documenting business requirements - translating stakeholder needs into BRDs, user stories, and process flows that drive clear outcomes.</p>
                     </div>
                     <div className="space-y-4 group">
                         <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-teal-500 mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
                             <Bot size={28} />
                         </div>
-                        <h3 className="text-2xl font-bold text-primary">Agentic AI Systems</h3>
-                        <p className="text-secondary leading-relaxed">I build deterministic, debuggable AI agents that combine structured SQL analytics with RAG for grounded, explainable answers.</p>
+                        <h3 className="text-2xl font-bold text-primary">Data Analysis & Decision Support</h3>
+                        <p className="text-secondary leading-relaxed">Turning raw data into actionable insights using SQL, Excel, and Power BI - giving stakeholders the clarity to make fast, confident decisions.</p>
+                    </div>
+                    <div className="space-y-4 group">
+                        <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-purple-500 mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                            <Brain size={28} />
+                        </div>
+                        <h3 className="text-2xl font-bold text-primary">Stakeholder Engagement & Strategy</h3>
+                        <p className="text-secondary leading-relaxed">Bridging business and technical teams - managing expectations, aligning solutions to business goals, and driving outcomes across sprints and deliverables.</p>
                     </div>
                 </div>
 
-                <div className="mt-20">
-                    <h3 className="text-lg font-bold mb-8 text-primary uppercase tracking-wider opacity-70 text-center">Tech Stack</h3>
-                    <div className="relative w-full max-w-[85vw] md:max-w-full mx-auto overflow-hidden pt-8 pb-12">
-                        {/* Gradient Masks for edges */}
-                        <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
-                        <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
+                <div className="mt-20 space-y-10">
 
-                        {/* Row 1 */}
-                        <motion.div
-                            className="flex gap-4 md:gap-6 mb-6 w-max"
-                            animate={{ x: ["0%", "-50%"] }}
-                            transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
-                        >
-                            {[...expertise.slice(0, 12), ...expertise.slice(0, 12)].map((tech, idx) => (
-                                <motion.div
-                                    key={`${tech.name}-${idx}`}
-                                    whileHover={{ scale: 1.05, y: -2 }}
-                                    className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
-                                    style={{
-                                        backgroundColor: `${tech.color}15`, // ~8% opacity
-                                        borderColor: `${tech.color}30`,     // ~20% opacity
-                                        color: tech.color
-                                    }}
-                                >
-                                    {tech.logo && (
-                                        <img
-                                            src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
-                                            alt=""
-                                            className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
-                                            onError={(e) => e.currentTarget.style.display = 'none'}
-                                        />
-                                    )}
-                                    <span className="font-bold text-sm md:text-base">{tech.name}</span>
-                                </motion.div>
-                            ))}
-                        </motion.div>
-
-                        {/* Row 2 */}
-                        <motion.div
-                            className="flex gap-4 md:gap-6 w-max"
-                            animate={{ x: ["-50%", "0%"] }}
-                            transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
-                        >
-                            {[...expertise.slice(12), ...expertise.slice(12)].map((tech, idx) => (
-                                <motion.div
-                                    key={`${tech.name}-${idx}`}
-                                    whileHover={{ scale: 1.05, y: -2 }}
-                                    className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
-                                    style={{
-                                        backgroundColor: `${tech.color}15`,
-                                        borderColor: `${tech.color}30`,
-                                        color: tech.color
-                                    }}
-                                >
-                                    {tech.logo && (
-                                        <img
-                                            src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
-                                            alt=""
-                                            className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
-                                            onError={(e) => e.currentTarget.style.display = 'none'}
-                                        />
-                                    )}
-                                    <span className="font-bold text-sm md:text-base">{tech.name}</span>
-                                </motion.div>
-                            ))}
-                        </motion.div>
+                    {/* BA Core Row */}
+                    <div>
+                        <div className="flex items-center gap-3 mb-4 px-2">
+                            <span className="text-xs font-bold uppercase tracking-widest text-primary opacity-60">BA Core</span>
+                            <span className="h-px flex-grow bg-gray-200" />
+                        </div>
+                        <div className="relative w-full max-w-[85vw] md:max-w-full mx-auto overflow-hidden pb-2">
+                            <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
+                            <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
+                            <motion.div
+                                className="flex gap-4 md:gap-6 w-max"
+                                animate={{ x: ["0%", "-50%"] }}
+                                transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
+                            >
+                                {[...expertise.slice(0, 13), ...expertise.slice(0, 13)].map((tech, idx) => (
+                                    <motion.div
+                                        key={`row1-${tech.name}-${idx}`}
+                                        whileHover={{ scale: 1.05, y: -2 }}
+                                        className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
+                                        style={{
+                                            backgroundColor: `${tech.color}15`,
+                                            borderColor: `${tech.color}30`,
+                                            color: tech.color
+                                        }}
+                                    >
+                                        {tech.logo && (
+                                            <img
+                                                src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
+                                                alt=""
+                                                className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
+                                                onError={(e) => e.currentTarget.style.display = 'none'}
+                                            />
+                                        )}
+                                        <span className="font-bold text-sm md:text-base">{tech.name}</span>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
                     </div>
+
+                    {/* Technical Edge Row */}
+                    <div>
+                        <div className="flex items-center gap-3 mb-4 px-2">
+                            <span className="text-xs font-bold uppercase tracking-widest text-primary opacity-60">Technical Edge</span>
+                            <span className="h-px flex-grow bg-gray-200" />
+                        </div>
+                        <div className="relative w-full max-w-[85vw] md:max-w-full mx-auto overflow-hidden pb-2">
+                            <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
+                            <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#e0f2fe] to-transparent z-10 pointer-events-none" />
+                            <motion.div
+                                className="flex gap-4 md:gap-6 w-max"
+                                animate={{ x: ["-50%", "0%"] }}
+                                transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
+                            >
+                                {[...expertise.slice(13), ...expertise.slice(13)].map((tech, idx) => (
+                                    <motion.div
+                                        key={`row2-${tech.name}-${idx}`}
+                                        whileHover={{ scale: 1.05, y: -2 }}
+                                        className="flex items-center px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl border backdrop-blur-sm min-w-max transition-shadow shadow-sm hover:shadow-lg cursor-default"
+                                        style={{
+                                            backgroundColor: `${tech.color}15`,
+                                            borderColor: `${tech.color}30`,
+                                            color: tech.color
+                                        }}
+                                    >
+                                        {tech.logo && (
+                                            <img
+                                                src={`https://cdn.simpleicons.org/${tech.logo}/${tech.color.replace('#', '')}`}
+                                                alt=""
+                                                className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 inline-block"
+                                                onError={(e) => e.currentTarget.style.display = 'none'}
+                                            />
+                                        )}
+                                        <span className="font-bold text-sm md:text-base">{tech.name}</span>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
+                    </div>
+
                 </div>
             </Section>
 
